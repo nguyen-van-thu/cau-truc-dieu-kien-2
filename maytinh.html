@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhap</title>
+</head>
+<body>
+<input type="text" id="dong1" placeholder="so 1">
+<input type="text" id="dong2" placeholder="so 2">
+<p id="ketqua"></p>
+<button onclick="total('+')">cong</button>
+<button onclick="total('-')">tru</button>
+<button onclick="total('*')">nhan</button>
+<button onclick="total('/')">chia</button>
+<script>
+
+
+    function total(toan) {
+        let number1 = document.getElementById("dong1").value
+        let number2 = document.getElementById("dong2").value
+        let ketqua;
+        switch (toan) {
+            case '+': {
+                ketqua = number1 + number2;
+                break;
+            }
+            case '-':{
+                ketqua = number1 - number2;
+                break;
+            }
+            case '*':{
+                ketqua = number1 * number2;
+                break;
+            }
+            case '/': {
+                ketqua = number1 / number2;
+                break;
+            }
+
+        }
+
+    }
+
+</script>
+</body>
+</html>
